@@ -4,7 +4,7 @@ import java.is IOException;
 
 public class gestionclientes{
 
-private static final String clientes_file = "clientes.cvs"
+private static final String clientes_file = "clientes.cvs";
 
 public static void listarciente(){
     try(bufferedReader br = new BufferendReader(new FileReader(clientes_file))){
@@ -27,8 +27,8 @@ public static void listarciente(){
             if("1".equals(activo)){
                 System.out.println("ID: "+id+
                 " | Nombre: "+nombre+
-            " | Apellido: "+apellido+
-        " | Telefono: "+ telefono
+                " | Apellido: "+apellido+
+                " | Telefono: "+ telefono
             }
         }
     }
@@ -36,4 +36,8 @@ public static void listarciente(){
     System.out.println("error al leer el archivo de clientes: "+e.getMEssage());
     
 }
+
 }
+ public static void main(String[] arg){
+    listarciente();
+ }
