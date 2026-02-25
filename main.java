@@ -10,7 +10,7 @@ public static void EliminarCliente(int idCliente) {
             String[] datos = linea.split(",");
 
             if (datos[0].equals(String.valueOf(idCliente))) {
-                datos[4] = "0"; // Cambiar activo a 0
+                datos[4] = "0"; 
                 encontrado = true;
                 linea = String.join(",", datos);
             }
